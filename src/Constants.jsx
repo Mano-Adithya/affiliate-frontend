@@ -3,7 +3,7 @@ import { albionAuctionIcon, fobesFavIcon, wall360Icon } from "./assets";
 
 // export const BACKEND_BASE_URL = "https://affliate.albionpropertyhub.com";
 // export const BACKEND_BASE_URL = "http://192.168.29.129:5000/api";
-export const BACKEND_BASE_URL = "https://api.albiongroups.com/api";
+export const BACKEND_BASE_URL = "http://52.66.18.208:5000/api";
 
 export const SIDEBAR_OPTIONS = [
   {
