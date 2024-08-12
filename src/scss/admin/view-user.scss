@@ -1,0 +1,47 @@
+.view-user-page-container{
+    box-sizing: border-box;
+    padding: 40px;
+    background: $theme-color-bg;
+    width: 100%;
+    height: 100%;
+    .view-user-page-hero-sec{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & > div{
+            display: flex;
+            gap: 10px;
+        }
+        .user-edit-action-btns{
+            i {
+                transform: scale(1.2);
+                display: flex;
+            }
+            .block-user-ab{
+                border: 1px solid #000;
+                color: #000;
+            }
+            .delete-user-ab{
+                border: 1px solid $danger-hex-code;
+                color: $danger-hex-code;
+                i {
+                    color : $danger-hex-code
+                }
+            }
+            .unblock-user-ab{
+                background: #000;
+                color: #fff;
+                i {
+                    display: flex;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    & i {
+        display: flex;
+        color: #000;
+        transform: scale(1.5);
+    }
+}

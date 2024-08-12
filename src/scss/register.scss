@@ -1,0 +1,84 @@
+.register-container{
+    width: 350px;
+    min-height: auto;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #cccccc;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    .registerForm{
+        display: flex;
+        flex-direction: column;
+        .userTypeSelection{
+            margin: 0 auto;
+            margin-bottom: 15px;
+        }
+        .ant-form-item-explain-error{
+            text-align: left;
+            font-size: 12px;
+        }
+        input{
+            cursor: pointer;
+        }
+        .ant-form-item-control-input-content{
+            display: flex;
+            justify-content: center;
+        }
+        .verification-text-head{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .verify-form{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            .verifyEmailBtn{
+                height: 40px;
+            }
+        }
+    }
+    .userTypeBtn{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        height: 40px;
+    }
+    .activeUserType{
+        background: #8c193f10;
+        border: 1px solid #8c193f;
+    }
+    h1{
+        font-size: 20px;
+        font-weight: 600;
+        padding: 0px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    & .ant-input-number{
+        width: 100%;
+    }
+    .registerUserBtn{
+        width: 80%;
+        background: $theme-color;
+        color: #fff;
+        height: 40px;
+    }
+    & a{
+        cursor: pointer;
+    }
+    & p {
+        font-size: 12px;
+        text-align: center;
+        & a {
+            font-size: 14px;
+            color: $theme-color;
+        }
+    }
+}

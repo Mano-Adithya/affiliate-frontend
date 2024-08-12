@@ -1,0 +1,28 @@
+$theme-color : #8c193f;
+$theme-color-bg : #8c193f05;
+$main-text-color : #000000;
+$secondary-text-color : #737373;
+$secondary-bg-color : #f7f7f7;
+$danger-hex-code : #DC3545;
+$block-hex-code : #333333;
+
+@import '../../node_modules/@flaticon/flaticon-uicons/css/all/all.css';
+@import './login.scss';
+@import './register.scss';
+@import './affliates/dashboard.scss';
+@import './affliates/users.scss';
+@import './affliates/profile.scss';
+@import './affliates/wallet.scss';
+@import './sidebar.scss';
+@import './affliates.scss';
+@import './common.scss';
+@import './admin/admin-login.scss';
+@import './admin/users.scss';
+@import './modal.scss';
+@import './admin/user-edit.scss';
+@import './admin/dashboard.scss';
+@import './admin/user-type.scss';
+@import './admin/view-user.scss';
+@import './admin/user-referral-list.scss';
+@import './wallet.scss';
+@import './payout-history.scss';

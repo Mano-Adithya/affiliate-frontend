@@ -1,0 +1,91 @@
+.users-list-in-admin{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    background: $theme-color-bg;
+    display: flex;
+    flex-direction: column;
+
+    .user-list-hero-section,
+    .user-list-table{
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    .user-list-hero-section {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px;
+
+        .import-user-btn{
+            display: flex;
+            cursor: pointer;
+            gap: 5px;
+            i {
+                display: flex;
+            }
+        }
+
+        .search-input{
+            width: 25%;
+        }
+    }
+
+    .user-list-table{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        .ant-tabs{
+            width: 100%;
+        }
+        .ant-table-wrapper{
+            width: 100%;
+            .action-ctas{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                
+                &>i,
+                    &>a>i {
+                        cursor: pointer;
+                        transform: scale(1.5);
+                        transition: transform ease-in .2s;
+                        &:hover {
+                            color: #8c193f;
+                            transform: scale(2);
+                        }
+                    }
+                    & > a {
+                        transform: scale(1.5);
+                        transition: transform ease-in .2s;
+                        cursor: pointer;
+                        color: #333;
+                        &:hover {
+                            color: #8c193f;
+                            transform: scale(2);
+                        }
+                    }
+            }
+        }
+    }
+
+}
+
+
+.total-earnings-col{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    guideicon{
+        display: flex;
+        cursor: pointer;
+        i{
+            display: flex;
+        }
+    }
+}

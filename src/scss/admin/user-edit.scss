@@ -1,0 +1,221 @@
+.user-edit-page-container {
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+
+    .user-edit-area {
+        width: 100%;
+        margin: 0 auto;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+
+        .user-edit-hero{
+            display: flex;
+            justify-content: space-between;
+
+            h2{
+                font-size: 20px;
+            }
+
+            .user-edit-action-btns{
+                display: flex;
+                gap: 10px;
+
+                .block-user-ab,.delete-user-ab{
+                    display: flex;
+                    align-items: center;
+                    i {
+                        display: flex;
+                        transform: scale(1.2);
+                    }
+                }
+                .block-user-ab{
+                    &:hover{
+                        border: 1px solid $block-hex-code;
+                        color: $block-hex-code;
+                        transform: translateY(-3px);
+                    }
+                }
+                .unblock-user-ab{
+                    background: #000;
+                    color: #fff;
+                    i {
+                        display: flex;
+                    }
+                }
+                .delete-user-ab{
+                    &:hover{
+                        border: 1px solid $danger-hex-code;
+                        color: $danger-hex-code;
+                        transform: translateY(-3px);
+                    }
+                }
+            }
+
+        }
+
+        .first-row {
+            display: flex;
+            justify-content: space-between;
+
+            .personal-information-edit {
+                width: 50%;
+                min-height: 50%;
+                box-sizing: border-box;
+                padding: 20px;
+                background: $secondary-bg-color;
+                border-radius: 10px;
+
+                &>h2 {
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+
+                & .ant-form {
+                    .ant-form-item {
+                        margin-bottom: 8px;
+
+                        label {
+                            font-weight: 600;
+                        }
+
+                        .ant-input {
+                            cursor: pointer;
+                            height: 35px;
+                            padding-left: 15px;
+                        }
+
+                        &:hover {
+                            i {
+                                color: $theme-color;
+                            }
+                        }
+
+                        i {
+                            transform: scale(1.5);
+                            display: flex;
+                        }
+                    }
+
+                    .saveInformationBtn {
+                        width: 100%;
+                        height: 40px;
+                        margin-top: 8px;
+                        background: #8c193f10;
+                        border: 1px solid #8c193f;
+                        color: #8c193f;
+                    }
+                }
+
+            }
+
+            .password-reset-edit {
+                width: 45%;
+                background: $secondary-bg-color;
+                box-sizing: border-box;
+                padding: 20px;
+                border-radius: 10px;
+                height: 20%;
+
+                .generatePasswordBtn{
+                    display: flex;
+                    margin-left: auto;
+                    margin-bottom: 10px;
+                    border: 1px solid #8E44AD;
+                    color: #8E44AD;
+                }
+
+                .resetPasswordBtn{
+                    width: 100%;
+                    height: 40px;
+                    background: $theme-color;
+                    color: #fff;
+                }
+
+                .wallet-and-referrals{
+                    border: 1px solid;
+                    box-sizing: border-box;
+                    padding: 20px;
+                    border-radius: 8px;
+                    background: #fff;
+                    border: 1px solid #cccccc;
+
+                    & > h3{
+                        font-size: 18px;
+                        margin: 2px;
+                    }
+
+                    .referral-code{
+                        width: 100%;
+                        box-sizing: border-box;
+                        padding: 10px;
+                    }
+
+                    .total-earnings{
+                        display: flex;
+                        gap: 5px;
+                        justify-content: space-evenly;
+                        .total-this-month{
+                            width: 45%;
+                            border: 1px solid;
+                            box-sizing: border-box;
+                            padding: 10px;
+                            border-radius: 4px;
+                            display: flex;
+                            flex-direction: column;
+                            cursor: pointer;
+                            background: #D6891010;
+                            border: 1px solid #D68910;
+                            gap: 5px;
+                            & > h2{
+                                margin: 0px;
+                                color: #D68910;
+                            }
+                            & > p{
+                                margin: 0px;
+                            }
+                        }
+                        .earnings-total{
+                            width: 45%;
+                            border: 1px solid;
+                            box-sizing: border-box;
+                            padding: 10px;
+                            display: flex;
+                            cursor: pointer;
+                            background: #2471A310;
+                            border: 1px solid #2471A3;
+                            flex-direction: column;
+                            gap: 5px;
+                            border-radius: 4px;
+                            & > h2{
+                                margin: 0px;
+                                color: #2471A3;
+                            }
+                            & > p{
+                                margin: 0px;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+.deleteiconwrapbtn,.deleteiconwrapbtn:focus{
+    border: none !important;
+    box-shadow: none !important; 
+    padding: 0px !important;
+    outline : none;
+
+    & > i{
+        transform: scale(1.5);
+        transition: transform ease-in .2s;
+        &:hover{
+            transform: scale(2);
+        }
+    }
+}

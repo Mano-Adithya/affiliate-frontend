@@ -1,0 +1,82 @@
+.user-type-page{
+    background: $theme-color-bg;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    & > h2{
+        font-weight: 500;
+        margin: 0px;
+    }
+    .user-type-list-table{
+        width: 90%;
+        .portal-edit-row{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .percentage-edit-input{
+                width: 20%;
+                .ant-input{
+                    cursor: pointer;
+                }
+            }
+            .ant-popconfirm-message{
+                display: flex;
+                align-items: center !important;
+                gap: 5px;
+            }
+        }
+        .delete-user-type-btn,
+        .delete-user-type-btn:hover{
+            border: 1px solid $danger-hex-code;
+            color: $danger-hex-code;
+        }
+        .user-type-actions{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+    }
+    .addNewUserType{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        height: 40px;
+        i {
+            display: flex;
+            transition: all ease-in .2s;
+        }
+        &:hover{
+            i {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+.ant-popconfirm-message{
+    align-items: center !important;
+    gap: 5px;
+}
+
+.add-new-user-modal{
+    box-sizing: border-box;
+    padding: 25px;
+    center{
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    .ant-input{
+        border-radius: 2px;
+        cursor: pointer;
+    }
+    .add-user-type-btn{
+        margin-top: 20px;
+        width: 100%;
+        height: 40px;
+    }
+}

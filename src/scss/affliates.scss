@@ -1,0 +1,12 @@
+.affliate-user-persona{
+    display: flex;
+    justify-content:flex-start;
+    margin: 0px;
+    padding: 0px;
+    height: 99.5vh;
+    .affliate-user-persona-route-area{
+        background: $theme-color-bg;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}

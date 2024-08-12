@@ -1,0 +1,12 @@
+.payout-history-section{
+    box-sizing: border-box;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    .payout-filter{
+        display: flex;
+        margin-left: auto;
+        gap: 10px;
+    }
+}

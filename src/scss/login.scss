@@ -1,0 +1,125 @@
+.login-main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    & > img{
+        object-fit: contain;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+.login-container {
+    margin: 0 auto;
+    width: 350px;
+    min-height: 400px;
+    display: flex;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 20px;
+    flex-direction: column;
+    border: 1px solid #cccccc;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    .login-header-section{
+        display: flex;
+        align-items: center;
+        width: 100%;        
+        margin-bottom: 25px;
+        i{
+            margin: 0px;
+            display: flex;
+            cursor: pointer;
+        }
+        h1{
+            font-size: 20px;
+            font-weight: 600;
+            padding: 0px;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+    .login-form{
+        label {
+            font-size: 14px;
+        }
+        .ant-btn-default{
+            font-size: 14x;
+            width: 80%;
+            background: $theme-color;
+            color: #fff;
+            height: 40px;
+        }
+        .ant-form-item-explain-error{
+            text-align: left;
+            font-size: 12px;
+        }
+        .ant-otp{
+            width: 75%;
+        }
+        .ant-otp-input{
+            height: 40px;
+        }
+        input{
+            cursor: pointer;
+        }
+        .ant-form-item-control-input-content{
+            display: flex;
+            justify-content: center;
+        }
+
+        & center{
+            font-size: 12px;
+            a {
+                color: #8c193f;
+            }
+        }
+
+    }
+    .google-login-area{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .google-login-sec{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            & > img{
+                object-fit: contain;
+                height: 35px;
+                width: 35px;
+            }
+            & > p{
+                font-size: 10px;
+                margin: 2px;
+            }
+        }
+
+        & a{
+            cursor: pointer;
+        }
+
+        & p {
+            font-size: 12px;
+            & a {
+                font-size: 14px;
+                color: $theme-color;
+            }
+        }
+
+        .quick-logins{
+            display: flex;
+            justify-content: space-evenly;
+            width: 70%;
+            align-items: center;
+            i {
+                transform: scale(1.5);
+            }
+        }
+
+    }
+}

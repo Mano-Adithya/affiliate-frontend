@@ -1,0 +1,40 @@
+.users-list-page{
+    box-sizing: border-box;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .user-hero-area{
+        & > p {
+            color: $secondary-text-color;
+            font-size: 16px;
+        }
+    }
+    .user-list-filters{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 15px;
+        .user-search-input{
+            width: 20%;
+            cursor: pointer;
+        }
+    }
+    .user-table-pagination{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        width: 100%;
+        .ant-table-wrapper,
+        .ant-tabs{
+            width: 100%;
+        }
+        .ant-pagination{
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

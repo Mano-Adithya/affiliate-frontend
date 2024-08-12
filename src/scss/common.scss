@@ -1,0 +1,281 @@
+.albion-affliate-route-section {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-left: auto;
+    // margin: 0 auto;
+}
+
+.affliate-links-header {
+    width: 95%;
+    box-sizing: border-box;
+    padding: 15px;
+    justify-content: space-between;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    z-index: 10;
+    align-items: center;
+    border-bottom: 1px solid #FAFAFA;
+
+    & > div{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        width: 35%;
+
+        i{
+            display: flex;
+        }
+        .logout_btn{
+            border: 1px solid $danger-hex-code;
+            color: $danger-hex-code;
+        }
+    }
+
+    h1 {
+        margin: 0px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    & i {
+        cursor: pointer;
+    }
+}
+
+.export-to-excel-btn {
+    border: 1px solid $theme-color;
+    background: $theme-color;
+    color: #fff;
+    margin-right: 10px;
+
+    &>i {
+        display: flex;
+        font-size: 13px;
+    }
+}
+
+.user-import-modal {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 25px;
+
+    .excel-uploading-section {
+        box-sizing: border-box;
+        padding: 10px;
+        border: 1px solid #cccccc;
+        border-radius: 4px;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+
+        &>div {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        i {
+            display: flex;
+            transform: scale(1.15);
+        }
+
+        .csvIcon {
+            color: #1e8449;
+
+            i {
+                display: flex;
+                transform: scale(1.15);
+            }
+        }
+
+        .removeIcon {
+            position: absolute;
+            top: 0px;
+            right: 10px;
+            cursor: pointer;
+            transition: color ease-in .1s;
+
+            &:hover {
+                color: $danger-hex-code;
+            }
+        }
+    }
+
+    .startImportBtn {
+        width: 35%;
+        margin-left: auto;
+        background: $theme-color;
+        color: #fff;
+        height: 40px;
+    }
+}
+
+
+.withdraw-modal {
+    box-sizing: border-box;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+    &>h2 {
+        font-size: 16px;
+    }
+
+    &>h2 {
+        margin: 0px;
+        font-size: 32px;
+        color: $block-hex-code;
+    }
+
+    .withdraw-amount-area {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        
+        & > label{
+            color: #000;
+            & > span{
+                color: #737373;
+                font-size: 12px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+.withdraw-btn {
+    width: 30%;
+    height: 40px;
+    background: #000;
+    color: #fff;
+
+    i{
+        display: flex;
+    }
+
+    &:hover {
+        background: #fff;
+        color: #000;
+        border: 1px solid #000;
+    }
+}
+
+.cancel-withdraw-btn{
+    height: 40px;
+}
+
+.withdraw-footer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.ant-drawer-content{
+    background: #29235a !important;
+    color: #fff !important;
+    .ant-drawer-header{
+        padding: 5px;
+        .ant-drawer-header-title{
+            button{
+                color: #fff;
+            }
+        }
+    }
+    .ant-drawer-body{
+        padding: 20px;
+    }
+}
+
+
+.notification-drawer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    .notification-card{
+        box-sizing: border-box;
+        padding: 10px;
+        border-radius: 4px;
+        position: relative;
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        position: relative;
+        width: 100%;
+
+        & > i {
+            transform: scale(1.5);
+            display: flex;
+        }
+
+        .notification-content{
+            width: 80%;
+            & > p,
+            & > span{
+                margin: 2px;
+            }
+            & > p{
+                font-size: 12px;
+            }
+            & > span{
+                font-size: 10px;
+            }
+        }
+
+        .mark-as-read{
+            position: absolute;
+            top: -5px;
+            right: 15px;
+            cursor: pointer;
+        }        
+    }
+    .notification-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .action-btns{
+            display: flex;
+            gap: 5px;
+        }
+        .delete-notifications,
+        .delete-notifications:hover{
+            cursor: pointer;
+            background: $danger-hex-code !important;
+            border: none !important;
+            i{
+                color: #fff !important;
+                display: flex;
+            }
+        }
+    }
+    .mark-all-read-btn{
+        display: flex;
+        margin-left: auto;
+        font-size: 12px;
+        &:hover{
+            background: transparent !important;
+            color: #fff !important;
+            border: 1px solid #fff !important;
+        }
+        i{
+            display: flex;
+            transform: scale(0.9);
+        }
+    }
+    center{
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}

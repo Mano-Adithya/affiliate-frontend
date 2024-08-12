@@ -1,0 +1,20 @@
+.user-referral-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .ant-pagination{
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .hero-sec{
+        .user-referral-search-input{
+            display: flex;
+            margin-left: auto;
+            width: 25%;
+            .ant-input{
+                padding-left: 10px;
+            }
+        }        
+    }
+}
